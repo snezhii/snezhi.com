@@ -11,7 +11,7 @@ body {
 .intro-container {
     max-width: 500px;
     width: 100%;
-    &>*:not(.title){
+    &>*:not(.title,.line){
         margin-left: 15%;
         margin-right: 15%;
     }
@@ -27,6 +27,12 @@ body {
     @media (min-width: 500px) {
         font-size: 128px;
     }
+}
+
+.line {
+    color: #ff7979;
+    margin-top: -24px;
+    margin-bottom: -8px;
 }
 
 .hi { 
