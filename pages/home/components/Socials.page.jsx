@@ -1,10 +1,12 @@
 import styled, { useTheme } from 'styled-components'
 import SocialIcon from './SocialIcon'
 import { SOCIAL_ICON } from '../../../public/socialIcons'
+import { mediaQueries } from '../../../ui/mediaQueries'
 
 const SocialsContainer = styled.div`
   width: 400px;
   height: 160px;
+  justify-items: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 80px);
@@ -54,6 +56,13 @@ const SocialsContainer = styled.div`
       content: 'in/snezhi';
     }
   }
+
+  ${mediaQueries.smallPhone} {
+    width: 100%;
+    max-width: 400px;
+    height: 80px;
+    grid-template-rows: 80px;
+  }
 `
 
 const Text = styled.p`
@@ -65,6 +74,10 @@ const Text = styled.p`
   margin: 32px;
   text-align: center;
   color: #b2c8ff;
+
+  ${mediaQueries.smallPhone} {
+    display: none;
+  }
 `
 
 const Socials = () => {
