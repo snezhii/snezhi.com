@@ -51,7 +51,7 @@ const Body = styled.p`
   line-height: 1.1em;
   margin: 0 15% 8px;
   color: ${({ theme }) => theme.color.pale.blue};
-  
+
   ${mediaQueries.smallPhone} {
     font-size: 22px;
     margin: 0 24px 8px;

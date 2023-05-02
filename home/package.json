@@ -1,0 +1,31 @@
+{
+  "name": "snezhi-com",
+  "description": "The (main) homepage of the snezhi.com project",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^7.0.0",
+    "babel-plugin-styled-components": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snezhii/snezhi.com.git"
+  },
+  "author": "Snezhi Racheva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snezhii/snezhi.com/issues"
+  },
+  "homepage": "https://www.snezhi.com/"
+}
