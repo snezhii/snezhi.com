@@ -1,0 +1,39 @@
+{
+  "name": "snezhi-com",
+  "description": "The (main) homepage of the snezhi.com project",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^7.0.0",
+    "babel-plugin-styled-components": "^2.1.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snezhii/snezhi.com.git"
+  },
+  "author": "Snezhi Racheva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snezhii/snezhi.com/issues"
+  },
+  "homepage": "https://github.com/snezhii/snezhi.com#readme"
+}

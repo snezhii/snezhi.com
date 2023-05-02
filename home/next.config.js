@@ -11,6 +11,5 @@ module.exports = {
   },
 
   // ...other config
-
   pageExtensions: ['page.jsx', 'page.js']
 }

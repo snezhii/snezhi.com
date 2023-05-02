@@ -1,26 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "dev": "npm run dev -w home",
+    "build": "npm run build -w home"
   },
-  "dependencies": {
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "styled-components": "^5.3.10"
-  },
-  "devDependencies": {
-    "@svgr/webpack": "^7.0.0",
-    "babel-plugin-styled-components": "^2.1.1",
-    "eslint": "^8.39.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.8"
-  }
+  "workspaces": [
+    "home"
+  ]
 }
