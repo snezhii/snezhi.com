@@ -3,12 +3,14 @@
   "scripts": {
     "dev": "npm run dev -w home",
     "build": "npm run build -w home",
+    "storybook": "npm run storybook -w design-system",
+    "build-storybook": "npm run build-storybook -w design-system",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'"
   },
   "workspaces": [
-    "home"
+    "home", "design-system"
   ],
   "devDependencies": {
     "eslint": "^8.39.0",
