@@ -1,6 +1,6 @@
 import styled, { useTheme } from 'styled-components'
 import SocialIcon from './SocialIcon'
-import { SOCIAL_ICON } from '../../../public/socialIcons'
+import { SOCIAL_ICONS } from '../../../public/socialIcons'
 import { mediaQueries } from '../../../ui/mediaQueries'
 
 const SocialsContainer = styled.div`
@@ -86,27 +86,27 @@ const Socials = () => {
     <>
       <SocialsContainer>
         <SocialIcon
-          kind={SOCIAL_ICON.ENVELOPE}
+          kind={SOCIAL_ICONS.ENVELOPE}
           color={theme.color.bright.blue}
           href="mailto:hi@snezhi.com?subject=Hello there!&body=(Write your dazzling message here 👀)"
         />
         <SocialIcon
-          kind={SOCIAL_ICON.DEV}
+          kind={SOCIAL_ICONS.DEV}
           color={theme.color.bright.salmon}
           href="https://dev.to/snezhi"
         />
         <SocialIcon
-          kind={SOCIAL_ICON.GITHUB}
+          kind={SOCIAL_ICONS.GITHUB}
           color={theme.color.bright.pink}
           href="https://github.com/snezhii"
         />
         <SocialIcon
-          kind={SOCIAL_ICON.CODEPEN}
+          kind={SOCIAL_ICONS.CODEPEN}
           color={theme.color.bright.purple}
           href="https://codepen.io/snezhi"
         />
         <SocialIcon
-          kind={SOCIAL_ICON.LINKEDIN}
+          kind={SOCIAL_ICONS.LINKEDIN}
           color={theme.color.bright.lime}
           href="https://www.linkedin.com/in/snezhi/"
         />

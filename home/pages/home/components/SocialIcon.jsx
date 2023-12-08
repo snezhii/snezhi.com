@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import * as icons from '../../../public/socialIcons'
+import { getSocialIcon } from '../../../public/socialIcons'
 
 const IconWrapper = styled.a`
   --icon-width: 56px;
@@ -21,8 +21,8 @@ const IconWrapper = styled.a`
   }
 `
 
-const SocialIcon = ({ kind = 'Dev', color, href }) => {
-  const Icon = icons[kind]
+const SocialIcon = ({ kind = 'DEV', color, href }) => {
+  const Icon = getSocialIcon(kind)
 
   return (
     <IconWrapper
