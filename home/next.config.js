@@ -11,6 +11,9 @@ module.exports = {
   },
 
   // ...other config
-  output: 'export',
-  pageExtensions: ['page.jsx', 'page.js']
+  pageExtensions: ['page.jsx', 'page.js'],
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en'
+  }
 }
