@@ -10,7 +10,9 @@ const IconWrapper = styled.a`
   & > svg {
     margin-top: var(--hover-offset);
     color: ${({ color, theme }) => (color ? color : theme.color.pale.blue)};
-    transition: margin 300ms, color 300ms;
+    transition:
+      margin 300ms,
+      color 300ms;
   }
   &:hover {
     cursor: pointer;
@@ -29,7 +31,8 @@ const SocialIcon = ({ kind = 'DEV', color, href }) => {
       color={color}
       target="_blank"
       rel="noopener noreferrer"
-      href={href}>
+      href={href}
+    >
       <Icon />
     </IconWrapper>
   )
