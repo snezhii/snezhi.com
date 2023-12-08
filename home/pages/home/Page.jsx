@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Socials from './components/Socials.page'
+import Socials from './components/Socials'
 import { mediaQueries } from '../../ui/mediaQueries'
 
 const PageContainer = styled.div`
