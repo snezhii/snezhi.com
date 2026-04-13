@@ -1,22 +1,29 @@
 {
+  "name": "snezhi.com",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "npm run dev -w home",
-    "build": "npm run build -w home",
-    "storybook": "npm run storybook -w design-system",
-    "build-storybook": "npm run build-storybook -w design-system",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'"
+    "preview": "vite preview"
   },
-  "workspaces": [
-    "home", "design-system"
-  ],
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
   "devDependencies": {
-    "eslint": "^8.39.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.8"
+    "@eslint/js": "^9.39.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "prettier": "3.8.2",
+    "vite": "^8.0.4"
   }
 }
