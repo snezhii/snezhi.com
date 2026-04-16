@@ -3,12 +3,117 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { styled } from '@linaria/react'
+import { MEDIA_QUERY } from './utils'
+
+const Header = styled.h1`
+  font-family: 'PP Mondwest';
+  font-size: 96px;
+  line-height: 1.1;
+  text-align: left;
+  text-wrap: balance;
+
+  @media (prefers-reduced-motion) {
+    align-self: center;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    position: absolute;
+    animation: headerParallax linear;
+    animation-timeline: view(-500px);
+  }
+  @keyframes headerParallax {
+    from {
+      top: 60%;
+    }
+    to {
+      top: 15%;
+    }
+  }
+`
+
+const Typewriter = styled.span`
+  --type-speed: 1s;
+  display: inline-block;
+  margin-bottom: -0.273em;
+
+  @media (prefers-reduced-motion: no-preference) {
+    visibility: hidden;
+    &::before {
+      overflow: hidden;
+      visibility: visible;
+      content: 'sheep?';
+      position: absolute;
+      animation:
+        typewriter var(--type-speed) steps(1),
+        marker-blink 1s step-end var(--type-speed) infinite;
+      margin-right: 0.08em;
+      border-right: 0.08em solid var(--text-h);
+    }
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0em;
+    }
+    16% {
+      // s
+      width: 0.4em;
+    }
+    33% {
+      // sh
+      width: 0.9em;
+    }
+    50% {
+      // she
+      width: 1.35em;
+    }
+    66% {
+      // shee
+      width: 1.78em;
+    }
+    83% {
+      // sheep
+      width: 2.25em;
+    }
+    to {
+      // sheep?
+      width: unset;
+    }
+  }
+  @keyframes marker-blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--text-h);
+    }
+  }
+`
+
+const FullSection = styled.section`
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 16px;
+  ${MEDIA_QUERY.TABLET} {
+    padding: 32px;
+  }
+  ${MEDIA_QUERY.DESKTOP} {
+    padding: 32px 64px;
+  }
+  display: flex;
+`
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <FullSection>
+        <Header>
+          Do engineers dream of CSS <Typewriter>sheep?</Typewriter>
+        </Header>
+      </FullSection>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
