@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'PP Mondwest';
+  src: url('assets/PPMondwest-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'PP NeueBit';
+  src: url('assets/PPNeueBit-Bold.otf') format('opentype');
+}
+
 :root {
   --text: #2e2a2f;
   --text-h: #2e2a2f;
@@ -11,11 +20,12 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --body: Helvetica, system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'PP NeueBit', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'PP Mondwest', system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  font: 18px/145% var(--body);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
